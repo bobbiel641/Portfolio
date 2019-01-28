@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+<link rel="stylesheet" href="main.css" type="text/css" media="screen"/>
+
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">PORTFOLIO
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">WINTER 2019</a>
+              <a href="#">SPRING 2019</a>
+              <a href="#">SUMMER 2019</a>
+              <a href="#">FALL 2019</a>
+            </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+   <div class="grandparent">
+<div class="heroimage">   
+
+
+<slider>
+      <slide><p>Adventurer</p></slide>
+      <slide><p>Black and White</p></slide>
+      <slide><p>Hope</p></slide>
+      <slide><p>Caged</p></slide>
+
+
+
+
+</slider>
+
+
+
+
+</div>
+
+<section class="container">
+
+<div class="portfolio">
+   <div class="text">PORTFOLIO</div>
+</div>
+
+<div class="about">
+   <div class="text">ABOUT</div>
+</div>
+
+<div class="contact">
+   <div class="text">CONTACT</div>
+</div>
+
+   
+
+</section>
+
+
+
+
+
+
+<div  class="footer">
+   
+</div>
+
+   </div>
+   <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "topnav") {
+             x.className += " responsive";
+           } else {
+             x.className = "topnav";
+           }
+         }
+         </script>
+</body>
+</html>

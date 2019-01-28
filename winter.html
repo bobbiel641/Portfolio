@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winter 2019</title>
+<link rel="stylesheet" href="main.css" type="text/css" media="screen"/>
+
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active">Home</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">PORTFOLIO
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="winter.html">WINTER 2019</a>
+          <a href="#">SPRING 2019</a>
+          <a href="#">SUMMER 2019</a>
+          <a href="#">FALL 2019</a>
+        </div>
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+    <a href="about.html">ABOUT</a>
+    <a href="contact.html">CONTACT</a>
+
+
+  </div>
+  
+  
+          
+          <div style="padding-left:16px">
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+   <div class="grandparent">
+<div class="heroimage">   
+
+  <CENTER>
+    <FORM>
+    <input type="button" value="Enter Protected Area" onClick="passWord()">
+    </FORM>
+    </CENTER>
+
+
+    
+<slider>
+      <slide><p>Adventurer</p></slide>
+      <slide><p>Black and White</p></slide>
+      <slide><p>Hope</p></slide>
+      <slide><p>Caged</p></slide>
+
+
+
+
+</slider>
+
+
+
+
+</div>
+
+<section class="container">
+
+<div class="portfolio">
+   <div class="text">PORTFOLIO</div>
+</div>
+
+<div class="about">
+   <div class="text">ABOUT</div>
+</div>
+
+<div class="contact">
+   <div class="text">CONTACT</div>
+</div>
+
+   
+
+</section>
+
+
+
+
+
+
+<div  class="footer">
+   
+</div>
+
+   </div>
+</body>
+<script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+
+
+
+<SCRIPT>
+    function passWord() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Your Password',' ');
+    while (testV < 3) {
+    if (!pass1) 
+    history.go(-1);
+    if (pass1.toLowerCase() == "winter2019") {
+    alert('Thank You');
+    window.open('http://127.0.0.1:5500/home.html#');
+    break;
+    } 
+    testV+=1;
+    var pass1 = 
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3) 
+    history.go(-1);
+    return " ";
+    } 
+    </SCRIPT>
+    
+
+
+
+
+
+</html>
